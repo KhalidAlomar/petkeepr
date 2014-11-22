@@ -1,0 +1,9 @@
+// only used for sequelize CLI
+
+module.exports = {
+  "env": 'development',
+  "config": "./lib/db/config.json",
+  "migrations-path": "./data/migrations",
+  "models-path": "./lib/models",
+  "coffee": false
+};

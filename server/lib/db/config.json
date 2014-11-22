@@ -1,0 +1,35 @@
+{
+	"development": {
+		"username": "root",
+		"password": "mysqlrootpass2",
+		"database": "petkeep_develop",
+		"host": "127.0.0.1",
+		"dialect": "mysql",
+		"pool": { 
+			"maxConnections": 5, 
+			"maxIdleTime": 30
+		}
+	},
+	"test": {
+		"username": "root",
+		"password": "mysqlrootpass2",
+		"database": "petkeep_test",
+		"host": "127.0.0.1",
+		"dialect": "mysql",
+		"pool": { 
+			"maxConnections": 5, 
+			"maxIdleTime": 30
+		}
+	},
+	"production": {
+		"username": "root",
+		"password": "mysqlrootpass2",
+		"database": "petkeep_production",
+		"host": "127.0.0.1",
+		"dialect": "mysql",
+		"pool": { 
+			"maxConnections": 5, 
+			"maxIdleTime": 30
+		}
+	}
+}
