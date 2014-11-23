@@ -1,16 +1,11 @@
 "use strict";
 
 module.exports = function(sequelize, DataTypes) {
-  	var Budget = sequelize.define(
-		'Budget', 
+  	var User = sequelize.define(
+		'User', 
 		{
-			name: DataTypes.STRING,
-			startDate: {
-				type: DataTypes.DATE
-			},
-			endDate: {
-				type: DataTypes.DATE
-			}
+			userName: DataTypes.STRING,
+			password: DataTypes.STRING,
 		}, 
 		{
 			classMethods: {
@@ -20,5 +15,5 @@ module.exports = function(sequelize, DataTypes) {
 			}
 		}
 	);
-	return Budget;
+	return User;
 };

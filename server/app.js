@@ -6,11 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var defaultRoutes = require('./routes/default');
-var users = require('./routes/users');
 
 module.exports = createExpressApp;
 
-function createExpressApp(dbConnectionProvider, dbQueryFormatter, budgetRouter, petRouter) {
+function createExpressApp(dbConnectionProvider, dbQueryFormatter, userRouter, petRouter) {
     var app = express();
 
     // view engine setup
@@ -31,9 +30,8 @@ function createExpressApp(dbConnectionProvider, dbQueryFormatter, budgetRouter, 
     });
 
     app.use('/', defaultRoutes);
-    app.use('/budgets', budgetRouter);
+    app.use('/users', userRouter);
     app.use('/pets', petRouter);
-    app.use('/users', users);
 
     /// catch 404 and forward to error handler
     app.use(function(req, res, next) {

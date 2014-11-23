@@ -4,13 +4,7 @@ module.exports = function(sequelize, DataTypes) {
   	var Pet = sequelize.define(
 		'Pet', 
 		{
-			name: DataTypes.STRING,
-			startDate: {
-				type: DataTypes.DATE
-			},
-			endDate: {
-				type: DataTypes.DATE
-			}
+			name: DataTypes.STRING
 		}, 
 		{
 			classMethods: {
