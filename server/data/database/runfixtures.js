@@ -8,10 +8,10 @@ var angularModule = di.module('modMain', ['modFixtures']);
 angularModule.run(['fixtures', function(fixtures) {
 	console.log("Fixtures starting...");
 
-	var budgetFixture = fixtures['Budget'];
+	var userFixture = fixtures['User'];
 	var petFixture = fixtures['Pet'];
 
-	budgetFixture.start()
+	userFixture.start()
 		.then(petFixture.start())
 		.done();
 		

@@ -20,5 +20,5 @@ var createModels = require('./createModels');
 createModels.$inject = ['sequelize', 'Sequelize'];
 angularModule.factory('models', createModels);
 
-angularModule.factory('budgetModel', ['models', function(models) { return models['Budget']; }]);
+angularModule.factory('userModel', ['models', function(models) { return models['User']; }]);
 angularModule.factory('petModel', ['models', function(models) { return models['Pet']; }]);

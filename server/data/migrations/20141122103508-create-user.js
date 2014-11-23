@@ -3,21 +3,18 @@
 module.exports = {
 	up: function(migration, DataTypes, done) {
 		migration.createTable(
-			'Budgets',
+			'Users',
 			{
 				id: {
 					type: DataTypes.INTEGER,
 					primaryKey: true,
 					autoIncrement: true
 				},
-				name: {
+				userName: {
 					type: DataTypes.STRING
 				},
-				startDate: {
-					type: DataTypes.DATE
-				},
-				endDate: {
-					type: DataTypes.DATE
+				password: {
+					type: DataTypes.STRING
 				},
 				createdAt: {
 					type: DataTypes.DATE
@@ -31,7 +28,7 @@ module.exports = {
 	},
  
 	down: function(migration, DataTypes, done) {
-		migration.dropTable('Budgets');
+		migration.dropTable('Users');
 		done();
 	}
 };

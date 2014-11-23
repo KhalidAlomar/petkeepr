@@ -13,12 +13,6 @@ module.exports = {
 				name: {
 					type: DataTypes.STRING
 				},
-				startDate: {
-					type: DataTypes.DATE
-				},
-				endDate: {
-					type: DataTypes.DATE
-				},
 				createdAt: {
 					type: DataTypes.DATE
 				},

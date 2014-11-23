@@ -7,9 +7,9 @@ require('../lib/models');
 var angularModule = di.module('modRouters', ['modDb', 'modModels']);
 module.exports = angularModule;
 
-var createBudgetRouter = require('./budgetrouter');
-createBudgetRouter.$inject = ['models'];
-angularModule.factory('budgetRouter', createBudgetRouter);
+var createUserRouter = require('./userrouter');
+createUserRouter.$inject = ['models'];
+angularModule.factory('userRouter', createUserRouter);
 
 var createPetRouter = require('./petrouter');
 createPetRouter.$inject = ['models'];
